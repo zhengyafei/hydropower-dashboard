@@ -1,0 +1,70 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "uri": null,
+  "body": {
+    "total": 8,
+    "size": 100,
+    "current": 1,
+    "records": [
+      {
+        "pid": "20081113545902",
+        "dicCode": "workBill",
+        "dataName": "流程未启动",
+        "dataValue": "start",
+        "ordering": 1
+      },
+      {
+        "pid": "20081113551303",
+        "dicCode": "workBill",
+        "dataName": "流程结束",
+        "dataValue": "end",
+        "ordering": 2
+      },
+      {
+        "pid": "20081113553102",
+        "dicCode": "workBill",
+        "dataName": "流程作废",
+        "dataValue": "cancel",
+        "ordering": 3
+      },
+      {
+        "pid": "20081113554803",
+        "dicCode": "workBill",
+        "dataName": "工作票登记",
+        "dataValue": "p000",
+        "ordering": 4
+      },
+      {
+        "pid": "20081113560901",
+        "dicCode": "workBill",
+        "dataName": "审核/签发",
+        "dataValue": "p5",
+        "ordering": 5
+      },
+      {
+        "pid": "20081113562702",
+        "dicCode": "workBill",
+        "dataName": "工作许可/操作发令",
+        "dataValue": "p6",
+        "ordering": 6
+      },
+      {
+        "pid": "20081113565004",
+        "dicCode": "workBill",
+        "dataName": "操作/作业",
+        "dataValue": "p7",
+        "ordering": 7
+      },
+      {
+        "pid": "20081113570204",
+        "dicCode": "workBill",
+        "dataName": "工作终结",
+        "dataValue": "p8",
+        "ordering": 8
+      }
+    ],
+    "pages": 1
+  },
+  "success": true
+}

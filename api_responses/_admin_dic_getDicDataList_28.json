@@ -1,0 +1,84 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "uri": null,
+  "body": {
+    "total": 10,
+    "size": 100,
+    "current": 1,
+    "records": [
+      {
+        "pid": "20080809562902",
+        "dicCode": "issueWorkflow",
+        "dataName": "消缺(无需开票)",
+        "dataValue": "P0040",
+        "ordering": 0
+      },
+      {
+        "pid": "20080809554713",
+        "dicCode": "issueWorkflow",
+        "dataName": "缺陷领导审批",
+        "dataValue": "P0030",
+        "ordering": 0
+      },
+      {
+        "pid": "22032913480585",
+        "dicCode": "issueWorkflow",
+        "dataName": "开工作票",
+        "dataValue": "P0041",
+        "ordering": 0
+      },
+      {
+        "pid": "20080809564603",
+        "dicCode": "issueWorkflow",
+        "dataName": "缺陷验收",
+        "dataValue": "P0050",
+        "ordering": 0
+      },
+      {
+        "pid": "20070910340127",
+        "dicCode": "issueWorkflow",
+        "dataName": "流程未启动",
+        "dataValue": "start",
+        "ordering": 1
+      },
+      {
+        "pid": "20070910360636",
+        "dicCode": "issueWorkflow",
+        "dataName": "缺陷登记",
+        "dataValue": "p000",
+        "ordering": 10
+      },
+      {
+        "pid": "20070910370735",
+        "dicCode": "issueWorkflow",
+        "dataName": "缺陷鉴定",
+        "dataValue": "p0020",
+        "ordering": 20
+      },
+      {
+        "pid": "23030109595216",
+        "dicCode": "issueWorkflow",
+        "dataName": "开票判定",
+        "dataValue": "p0021",
+        "ordering": 21
+      },
+      {
+        "pid": "20070910351028",
+        "dicCode": "issueWorkflow",
+        "dataName": "流程作废",
+        "dataValue": "cancel",
+        "ordering": 998
+      },
+      {
+        "pid": "20070910342834",
+        "dicCode": "issueWorkflow",
+        "dataName": "结束流程",
+        "dataValue": "end",
+        "ordering": 999
+      }
+    ],
+    "pages": 1
+  },
+  "success": true
+}

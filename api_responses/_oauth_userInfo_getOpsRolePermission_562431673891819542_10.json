@@ -1,0 +1,230 @@
+{
+  "code": 200,
+  "msg": "",
+  "uri": null,
+  "body": [
+    {
+      "pid": "20052518261401",
+      "name": "运维首页",
+      "code": "xtsy",
+      "parentId": "0"
+    },
+    {
+      "pid": "20052518265201",
+      "name": "运行值班",
+      "code": "yxzb",
+      "parentId": "0"
+    },
+    {
+      "pid": "20052518291002",
+      "name": "排班设置",
+      "code": "jbb",
+      "parentId": "20052518265201"
+    },
+    {
+      "pid": "20052518294703",
+      "name": "接班记事",
+      "code": "jjbjs",
+      "parentId": "20052518265201"
+    },
+    {
+      "pid": "20052518302302",
+      "name": "记事查询",
+      "code": "bcjscx",
+      "parentId": "20052518265201"
+    },
+    {
+      "pid": "20052518324604",
+      "name": "值班填报",
+      "code": "ops:write:1",
+      "parentId": "20052518294703"
+    },
+    {
+      "pid": "20052518330805",
+      "name": "留守填报",
+      "code": "ops:write:2",
+      "parentId": "20052518294703"
+    },
+    {
+      "pid": "20052518332505",
+      "name": "维护填报",
+      "code": "ops:write:3",
+      "parentId": "20052518294703"
+    },
+    {
+      "pid": "20052518383007",
+      "name": "排班查看",
+      "code": "pbck",
+      "parentId": "20052518291002"
+    },
+    {
+      "pid": "20061015055301",
+      "name": "位置地图",
+      "code": "wzdt",
+      "parentId": "0"
+    },
+    {
+      "pid": "21053116025228",
+      "name": "考察验收",
+      "code": "DZKC",
+      "parentId": "0"
+    },
+    {
+      "pid": "21053116284730",
+      "name": "安全管理",
+      "code": "safetyMgr",
+      "parentId": "0"
+    },
+    {
+      "pid": "21061815032742",
+      "name": "教育培训",
+      "code": "/safetyEduTra",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815035843",
+      "name": "目标职责",
+      "code": "/safetyTarget",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815042248",
+      "name": "现场管理",
+      "code": "/safetySite",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815053449",
+      "name": "风险管理",
+      "code": "/safetyRisk",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815060544",
+      "name": "应急管理",
+      "code": "/safetyEmergency",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815062645",
+      "name": "制度管理",
+      "code": "/safetySystem",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21061815065546",
+      "name": "事故管理",
+      "code": "/safetyAccident",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21083118010301",
+      "name": "消息管理",
+      "code": "/messageManagement",
+      "parentId": "0"
+    },
+    {
+      "pid": "953377106031546368",
+      "name": "运行管理",
+      "code": "yxgl",
+      "parentId": "0"
+    },
+    {
+      "pid": "20070913422404",
+      "name": "缺陷管理",
+      "code": "qxgl",
+      "parentId": "953377106031546368"
+    },
+    {
+      "pid": "20071414125804",
+      "name": "计划工作",
+      "code": "jhgz",
+      "parentId": "953377106031546368"
+    },
+    {
+      "pid": "20072115452305",
+      "name": "两票管理",
+      "code": "ticket",
+      "parentId": "953377106031546368"
+    },
+    {
+      "pid": "20093014201307",
+      "name": "定期工作",
+      "code": "XJGL",
+      "parentId": "953377106031546368"
+    },
+    {
+      "pid": "21102915390034",
+      "name": "防汛管理",
+      "code": "/floodPrevention",
+      "parentId": "21053116284730"
+    },
+    {
+      "pid": "21112914570401",
+      "name": "电站统计分析",
+      "code": "/statisticalAnalysis",
+      "parentId": "953377106031546368"
+    },
+    {
+      "pid": "21112914593401",
+      "name": "设备管理",
+      "code": "equipment",
+      "parentId": "0"
+    },
+    {
+      "pid": "21112915000602",
+      "name": "设备综合信息",
+      "code": "/equipmentManage",
+      "parentId": "21112914593401"
+    },
+    {
+      "pid": "21112915003202",
+      "name": "设备参数",
+      "code": "/equipmentParam",
+      "parentId": "21112914593401"
+    },
+    {
+      "pid": "21112915005203",
+      "name": "设备模型",
+      "code": "/equipmentModel",
+      "parentId": "21112914593401"
+    },
+    {
+      "pid": "21112915011404",
+      "name": "设备备品备件",
+      "code": "/equipmentSpare",
+      "parentId": "21112914593401"
+    },
+    {
+      "pid": "21120512442312",
+      "name": "在线调度",
+      "code": "safetyHelmet",
+      "parentId": "0"
+    },
+    {
+      "pid": "1003376861687844864",
+      "name": "电站考察",
+      "code": "/inspect",
+      "parentId": "21053116025228"
+    },
+    {
+      "pid": "22012510241517",
+      "name": "验收管理",
+      "code": "/inspectAcceptance",
+      "parentId": "21053116025228"
+    },
+    {
+      "pid": "22110114552801",
+      "name": "设备评级",
+      "code": "/equipmentRating",
+      "parentId": "21112914593401"
+    },
+    {
+      "pid": "23101309205920",
+      "name": "检修履历",
+      "code": "/equipmentRepair",
+      "parentId": "21112914593401"
+    }
+  ],
+  "success": true
+}

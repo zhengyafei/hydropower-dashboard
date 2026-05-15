@@ -1,0 +1,28 @@
+{
+  "code": 200,
+  "msg": "操作成功",
+  "uri": null,
+  "body": {
+    "total": 2,
+    "size": 100,
+    "current": 1,
+    "records": [
+      {
+        "pid": "20071710425231",
+        "dicCode": "billType",
+        "dataName": "工作票",
+        "dataValue": "workTicket1",
+        "ordering": 1
+      },
+      {
+        "pid": "20092515461904",
+        "dicCode": "billType",
+        "dataName": "操作票",
+        "dataValue": "workTicket2",
+        "ordering": 2
+      }
+    ],
+    "pages": 1
+  },
+  "success": true
+}

@@ -1,0 +1,399 @@
+{
+  "code": 200,
+  "msg": "",
+  "uri": null,
+  "body": {
+    "total": 55,
+    "size": 1000,
+    "current": 1,
+    "records": [
+      {
+        "pid": "20111114572908",
+        "companyName": "广东英德运维中心",
+        "companyCode": "GD_QY_YDFGS",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "20080708553906",
+        "companyName": "湖南浏阳运维中心",
+        "companyCode": "HN_LY_LYFGS",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "21123010103010",
+        "companyName": "湖南郴州运维中心",
+        "companyCode": "HN_CZ_YWZX",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "19091711321706",
+        "companyName": "小水电智能监控中心",
+        "companyCode": "JME",
+        "stationId": 0,
+        "type": "JT"
+      },
+      {
+        "pid": "21010409480611",
+        "companyName": "湖南道县运维中心",
+        "companyCode": "HN_YZ_DXFGS",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "21091515383306",
+        "companyName": "湖南溆浦运维中心",
+        "companyCode": "HN_HH_HHFGS",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "19103109033004",
+        "companyName": "湖南炎陵运维中心",
+        "companyCode": "HN_ZZ_YLFGS",
+        "stationId": 0,
+        "type": "QY"
+      },
+      {
+        "pid": "19103014360501",
+        "companyName": "炎陵梨木坳水电站",
+        "companyCode": "HN_ZZ_LMA",
+        "stationId": 69,
+        "type": "DC"
+      },
+      {
+        "pid": "19103014365102",
+        "companyName": "炎陵龙江水电站",
+        "companyCode": "HN_ZZ_YlLJ",
+        "stationId": 210,
+        "type": "DC"
+      },
+      {
+        "pid": "19120311285201",
+        "companyName": "炎陵铁钩水电站",
+        "companyCode": "HN_ZZ_TSG",
+        "stationId": 215,
+        "type": "DC"
+      },
+      {
+        "pid": "20030909154905",
+        "companyName": "炎陵进江源水电站",
+        "companyCode": "HN_ZZ_JJY",
+        "stationId": 217,
+        "type": "DC"
+      },
+      {
+        "pid": "20022609034901",
+        "companyName": "炎陵沔渡水电站",
+        "companyCode": "HN_ZZ_MD",
+        "stationId": 219,
+        "type": "DC"
+      },
+      {
+        "pid": "20042111162701",
+        "companyName": "炎陵岗背山水电站",
+        "companyCode": "HN_ZZ_GBS",
+        "stationId": 220,
+        "type": "DC"
+      },
+      {
+        "pid": "20070810260701",
+        "companyName": "炎陵金钩湾水电站",
+        "companyCode": "HN_ZZ_JGW",
+        "stationId": 223,
+        "type": "DC"
+      },
+      {
+        "pid": "20070810283601",
+        "companyName": "炎陵龙泉水电站",
+        "companyCode": "HN_ZZ_LQ",
+        "stationId": 224,
+        "type": "DC"
+      },
+      {
+        "pid": "20093010322006",
+        "companyName": "炎陵青龙水电站",
+        "companyCode": "HN_ZZ_QL",
+        "stationId": 230,
+        "type": "DC"
+      },
+      {
+        "pid": "20102713525804",
+        "companyName": "锦潭二级水电站",
+        "companyCode": "GD_YD_JTEJ",
+        "stationId": 232,
+        "type": "DC"
+      },
+      {
+        "pid": "20102814005703",
+        "companyName": "锦潭三级水电站",
+        "companyCode": "GD_YD_JTSJ",
+        "stationId": 233,
+        "type": "DC"
+      },
+      {
+        "pid": "20102814040905",
+        "companyName": "炎陵左江龙水电站",
+        "companyCode": "HN_YL_ZJL",
+        "stationId": 234,
+        "type": "DC"
+      },
+      {
+        "pid": "20112309484213",
+        "companyName": "炎陵桃树排水电站",
+        "companyCode": "HN_ZZ_TSP",
+        "stationId": 236,
+        "type": "DC"
+      },
+      {
+        "pid": "20112309493217",
+        "companyName": "炎陵茶背水电站",
+        "companyCode": "HN_ZZ_CB",
+        "stationId": 237,
+        "type": "DC"
+      },
+      {
+        "pid": "20112309504518",
+        "companyName": "炎陵南流水电站",
+        "companyCode": "HN_ZZ_NL",
+        "stationId": 238,
+        "type": "DC"
+      },
+      {
+        "pid": "20113013460704",
+        "companyName": "炎陵土垒水电站",
+        "companyCode": "HN_ZZ_TL",
+        "stationId": 239,
+        "type": "DC"
+      },
+      {
+        "pid": "20122814270205",
+        "companyName": "炎陵银新水电站",
+        "companyCode": "HN_ZZ_YX",
+        "stationId": 240,
+        "type": "DC"
+      },
+      {
+        "pid": "21010409355510",
+        "companyName": "安仁灌溉涵水电站",
+        "companyCode": "HN_CZ_GGH",
+        "stationId": 241,
+        "type": "DC"
+      },
+      {
+        "pid": "21010409580809",
+        "companyName": "双牌白果村水电站",
+        "companyCode": "HN_YZ_BGS",
+        "stationId": 242,
+        "type": "DC"
+      },
+      {
+        "pid": "21010410024110",
+        "companyName": "双牌牟江口水电站",
+        "companyCode": "HN_YZ_MJK",
+        "stationId": 243,
+        "type": "DC"
+      },
+      {
+        "pid": "21011813590827",
+        "companyName": "浏阳安洲一级电站",
+        "companyCode": "HN_LY_AZYJ",
+        "stationId": 246,
+        "type": "DC"
+      },
+      {
+        "pid": "21011814464729",
+        "companyName": "浏阳安洲二级电站",
+        "companyCode": "HN_LY_AZEJ",
+        "stationId": 247,
+        "type": "DC"
+      },
+      {
+        "pid": "21050816375201",
+        "companyName": "浏阳河口水电站",
+        "companyCode": "HN_LY_HK",
+        "stationId": 249,
+        "type": "DC"
+      },
+      {
+        "pid": "21051314035904",
+        "companyName": "浏阳新园水电站",
+        "companyCode": "HN_LY_XY",
+        "stationId": 250,
+        "type": "DC"
+      },
+      {
+        "pid": "21052913443125",
+        "companyName": "浏阳河东水电站",
+        "companyCode": "HN_LY_HD",
+        "stationId": 253,
+        "type": "DC"
+      },
+      {
+        "pid": "21052913455826",
+        "companyName": "浏阳株树桥二级水电站",
+        "companyCode": "HN_LY_DF",
+        "stationId": 254,
+        "type": "DC"
+      },
+      {
+        "pid": "21060915072041",
+        "companyName": "浏阳黄金潭水电站",
+        "companyCode": "HN_LY_HJT",
+        "stationId": 255,
+        "type": "DC"
+      },
+      {
+        "pid": "21071915502528",
+        "companyName": "双牌大湾里水电站",
+        "companyCode": "HN_YZ_DWL",
+        "stationId": 256,
+        "type": "DC"
+      },
+      {
+        "pid": "21081709022209",
+        "companyName": "英德峰业水电站",
+        "companyCode": "GD_YD_FY",
+        "stationId": 257,
+        "type": "DC"
+      },
+      {
+        "pid": "21091515413407",
+        "companyName": "溆浦泗坪水电站",
+        "companyCode": "HN_HH_SP",
+        "stationId": 258,
+        "type": "DC"
+      },
+      {
+        "pid": "21091516051211",
+        "companyName": "隆回洪口水电站",
+        "companyCode": "HN_LH_HK",
+        "stationId": 259,
+        "type": "DC"
+      },
+      {
+        "pid": "21100508502604",
+        "companyName": "中林二级电站",
+        "companyCode": "HN_XP_ZLE",
+        "stationId": 260,
+        "type": "DC"
+      },
+      {
+        "pid": "21100508510105",
+        "companyName": "炎陵坂溪水电站",
+        "companyCode": "HN_YL_BX",
+        "stationId": 261,
+        "type": "DC"
+      },
+      {
+        "pid": "21101211202115",
+        "companyName": "茶陵黄竹坪水电站",
+        "companyCode": "HN_YN_DD",
+        "stationId": 267,
+        "type": "DC"
+      },
+      {
+        "pid": "21102914143830",
+        "companyName": "桂东长青水电站",
+        "companyCode": "HN_YL_CQ",
+        "stationId": 268,
+        "type": "DC"
+      },
+      {
+        "pid": "21111611071910",
+        "companyName": "溆浦金星水电站",
+        "companyCode": "HN_XP_JX",
+        "stationId": 269,
+        "type": "DC"
+      },
+      {
+        "pid": "21111614363411",
+        "companyName": " 隆回海角山水电站",
+        "companyCode": "HN_AH_XX",
+        "stationId": 270,
+        "type": "DC"
+      },
+      {
+        "pid": "21113013221303",
+        "companyName": "茶陵黄坪水电站",
+        "companyCode": "HN_YL_HP",
+        "stationId": 272,
+        "type": "DC"
+      },
+      {
+        "pid": "21113013235706",
+        "companyName": "炎陵上井水电站",
+        "companyCode": "HN_YL_SJ",
+        "stationId": 273,
+        "type": "DC"
+      },
+      {
+        "pid": "21120216262506",
+        "companyName": "临武天龙水电站",
+        "companyCode": "HN_CZ_TL",
+        "stationId": 274,
+        "type": "DC"
+      },
+      {
+        "pid": "21121009313819",
+        "companyName": "桂东金坪水电站",
+        "companyCode": "HN_GD_JP",
+        "stationId": 275,
+        "type": "DC"
+      },
+      {
+        "pid": "21121615190502",
+        "companyName": "浏阳梅树水电站",
+        "companyCode": "HN_LY_MS",
+        "stationId": 276,
+        "type": "DC"
+      },
+      {
+        "pid": "22030709143308",
+        "companyName": "道县杰仕口水电站",
+        "companyCode": "HN_DX_JSK",
+        "stationId": 282,
+        "type": "DC"
+      },
+      {
+        "pid": "22051811221010",
+        "companyName": "道县棉竹江水电站",
+        "companyCode": "HN_DX_JZJ",
+        "stationId": 285,
+        "type": "DC"
+      },
+      {
+        "pid": "22071109443905",
+        "companyName": "安仁山下水电站",
+        "companyCode": "HN_AR_SX",
+        "stationId": 286,
+        "type": "DC"
+      },
+      {
+        "pid": "22072110535510",
+        "companyName": "溆浦红岭水电站",
+        "companyCode": "HN_HH_HL",
+        "stationId": 287,
+        "type": "DC"
+      },
+      {
+        "pid": "22082414165028",
+        "companyName": "临武寺冲一级水电站",
+        "companyCode": "HN_CZ_SC",
+        "stationId": 288,
+        "type": "DC"
+      },
+      {
+        "pid": "22091614204239",
+        "companyName": "临武寺冲二级水电站",
+        "companyCode": "HN_LW_SC2",
+        "stationId": 293,
+        "type": "DC"
+      }
+    ],
+    "pages": 1
+  },
+  "success": true
+}

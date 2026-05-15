@@ -1,0 +1,338 @@
+function selectStation(stationId) {
+  _treeSelectedStation = stationId;
+  buildOrgCascaderList();
+  showStationView(stationId);
+}
+
+function showStationView(stationId) {
+  var sd = window._STATION_DATA || {};
+  var view = document.getElementById('stationView');
+  var l0 = document.getElementById('monitorKPI_L0');
+  var l1 = document.getElementById('monitorKPI_L1');
+  if (l0) l0.style.display = 'none';
+  if (l1) l1.style.display = 'none';
+  var mcs = document.querySelectorAll('#chartHBar,#chartLine,#chartStacked,#chartDual');
+  mcs.forEach(function(el){var c=el.closest('.card');if(c)c.style.display='none';});
+  if (view) view.classList.add('open');
+
+  var devView = (sd.deviceView||{}).body||{};
+  var devDetail = (sd.deviceDetail||{}).body||[];
+  var weatherNow = (sd.weatherNow||{}).body||{};
+  var weatherFC = (sd.weatherForecast||{}).body||[];
+
+  // --- Station name ---
+  var foundName = '';
+  (function(){
+    var d = window._MONITOR_DATA || {};
+    (d.opsCenters||[]).forEach(function(c){(c.children||[]).forEach(function(s){if(s.id===stationId)foundName=s.companyName;});});
+  })();
+  var el = document.getElementById('stName'); if (el) el.textContent = foundName || '电站详情';
+
+  // --- Mock + real merged data ---
+  // Station-level mock defaults
+  var mock = {
+    designHead: 202, activePower: 173.0, capacityUtil: 21.6,
+    companyYearFD: 1558.27, stationYearFD: 113.93, stationRatio: 7.31
+  };
+
+  // --- KPI Row 1: 昨日发电 | 今日发电 | 设计水头 | 容量利用占比 ---
+  document.getElementById('stKPI_yesterday').textContent = Number(parseFloat(devView.zrfdl)||0).toLocaleString() + ' kWh';
+  document.getElementById('stKPI_today').textContent = Number(parseFloat(devView.jrfdl)||0).toLocaleString() + ' kWh';
+  document.getElementById('stKPI_head').textContent = (parseFloat(devView.depthWater)||mock.designHead).toFixed(0) + ' 米';
+  document.getElementById('stKPI_capUtil').textContent = mock.capacityUtil.toFixed(1) + '%';
+
+  // --- KPI Row 2: 年计划 | 年实际 | 月计划 | 月发电 ---
+  document.getElementById('stKPI_yearPlan').textContent = (parseFloat(devView.powerPlan)||0).toFixed(1) + ' 万kWh';
+  document.getElementById('stKPI_yearActual').textContent = (parseFloat(devView.gsnfdl)||0).toFixed(2) + ' 万kWh';
+  document.getElementById('stKPI_monthPlan').textContent = (parseFloat(devView.powerPlanMonth)||0).toFixed(1) + ' 万kWh';
+  document.getElementById('stKPI_monthFD').textContent = (parseFloat(devView.gsyfdl)||0).toFixed(2) + ' 万kWh';
+
+  // --- KPI Row 3: 公司年发电 | 电站年发电 | 占比 | 装机·有功 ---
+  document.getElementById('stKPI_companyFD').textContent = mock.companyYearFD.toFixed(2) + ' 万kWh';
+  document.getElementById('stKPI_stationFD').textContent = mock.stationYearFD.toFixed(2) + ' 万kWh';
+  document.getElementById('stKPI_ratio').textContent = mock.stationRatio.toFixed(1) + '%';
+  var capVal = (parseFloat(devView.zyggl)||0).toFixed(0);
+  document.getElementById('stKPI_power').innerHTML = '<span style="font-size:20px">'+capVal+'</span> kW <span style="color:var(--accent2);margin-left:6px">有功 '+mock.activePower.toFixed(1)+' kW</span>';
+
+  // --- Weather strip ---
+  var wHTML = '';
+  if (weatherNow && weatherNow.tmp) {
+    wHTML += '<div class="sw-day now"><div class="swd-d">当前</div><div class="swd-i">'+(weatherNow.cond_txt==='雾'?'🌫':weatherNow.cond_txt==='雨'?'🌧':'☁')+'</div><div class="swd-t">'+esc(weatherNow.tmp||'--')+'°C</div><div class="swd-c">'+esc(weatherNow.cond_txt||'')+'</div></div>';
+  }
+  (weatherFC||[]).slice(0,7).forEach(function(d){
+    var ds = (d.weatherDate||'').substring(5);
+    var isRain = (d.condTxtD||'').indexOf('雨')>=0;
+    var isCloud = (d.condTxtD||'').indexOf('云')>=0;
+    wHTML += '<div class="sw-day"><div class="swd-d">'+ds+'</div><div class="swd-i">'+(isRain?'🌧':isCloud?'⛅':'☀')+'</div><div class="swd-t">'+esc(d.tmpMin||'')+'~'+esc(d.tmpMax||'')+'°</div><div class="swd-c">'+esc(d.condTxtD||'')+'</div></div>';
+  });
+  var wr = document.getElementById('stWeatherStrip'); if (wr) wr.innerHTML = wHTML;
+
+  // --- Unit cards ---
+  var unitMock = [
+    {todayFD:2166, yearFD:67.23, lastYearFD:44.08, yesterdayFD:4972, vsLastYear:152,
+     currentStart:'05/09 19:55', yearRunH:2132.9, yearStopH:1083.1, currentRunH:135.2, yearRunPct:66,
+     breakerCount:1247, currentPower:173.0},
+    {todayFD:0, yearFD:46.70, lastYearFD:38.52, yesterdayFD:0, vsLastYear:121,
+     currentStart:'--', yearRunH:1429.1, yearStopH:1786.9, currentRunH:0, yearRunPct:44,
+     breakerCount:982, currentPower:0}
+  ];
+
+  var ucHTML = '';
+  (devDetail||[]).forEach(function(u, i){
+    var um = unitMock[i] || unitMock[0];
+    var uname = esc(u.name||('机组'+(i+1)));
+    var upwr = u.devicePower||'400';
+    var utype = esc(u.placement||'冲击式');
+    var cpwr = um.currentPower;
+
+    ucHTML += '<div class="unit-full-card">';
+    // Header
+    ucHTML += '<div class="ufc-hdr"><span class="ufc-name">'+uname+'</span><span class="ufc-tags"><span class="ufc-tag">'+utype+'</span><span class="ufc-tag">'+upwr+'kW</span><span class="ufc-tag">现功率 '+cpwr+' kW</span></span></div>';
+
+    // Body: left stats + right chart
+    ucHTML += '<div class="ufc-body">';
+    // Left: stats panels
+    ucHTML += '<div class="ufc-left">';
+
+    // 发电统计
+    ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">发电统计</div><div class="ufc-stats">';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+Number(um.todayFD).toLocaleString()+' kWh</span><span class="ufc-sl">今日发电量</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+Number(um.yesterdayFD).toLocaleString()+' kWh</span><span class="ufc-sl">昨日发电量</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearFD.toFixed(2)+' 万kWh</span><span class="ufc-sl">今年发电量</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.lastYearFD.toFixed(2)+' 万kWh</span><span class="ufc-sl">去年发电量</span></div>';
+    ucHTML += '<div class="ufc-stat highlight"><span class="ufc-sv">'+um.vsLastYear+'%</span><span class="ufc-sl">对比去年发电</span></div>';
+    ucHTML += '</div></div>';
+
+    // 时间统计
+    ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">时间统计</div><div class="ufc-stats">';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+esc(um.currentStart)+'</span><span class="ufc-sl">本次发电时间</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearRunH.toFixed(1)+' h</span><span class="ufc-sl">今年发电时长</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearStopH.toFixed(1)+' h</span><span class="ufc-sl">今年停发时长</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.currentRunH.toFixed(1)+' h</span><span class="ufc-sl">本次发电持续</span></div>';
+    ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearRunPct+'%</span><span class="ufc-sl">年发电时长占比</span></div>';
+    ucHTML += '</div></div>';
+
+    // 运行记录 + 断路器
+    ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">运行记录</div>';
+    ucHTML += '<div class="ufc-run-chart" id="stRunChart'+i+'"></div>';
+    ucHTML += '<div style="text-align:center;margin-top:4px;font-size:11px;color:var(--t3)">断路器分闸计数: <span style="color:var(--accent);font-family:var(--fd);font-size:14px">'+um.breakerCount+'</span> 次</div>';
+    ucHTML += '</div>';
+
+    ucHTML += '</div>'; // close ufc-left
+
+    // Right: 30-day chart
+    ucHTML += '<div class="ufc-right"><div class="ufc-panel"><div class="ufc-panel-title">近30天发电量趋势</div>';
+    ucHTML += '<div class="ufc-chart-30d" id="stUnitChart'+i+'"></div></div></div>';
+
+    ucHTML += '</div>'; // close ufc-body
+    ucHTML += '</div>'; // close unit-full-card
+  });
+
+  // Handle case where devDetail is empty - show 2 mock units
+  if ((devDetail||[]).length === 0) {
+    for (var mi = 0; mi < 2; mi++) {
+      var um = unitMock[mi];
+      var uname = (mi===0?'1号机组':'2号机组');
+      ucHTML += '<div class="unit-full-card">';
+      ucHTML += '<div class="ufc-hdr"><span class="ufc-name">'+uname+'</span><span class="ufc-tags"><span class="ufc-tag">冲击式</span><span class="ufc-tag">400kW</span><span class="ufc-tag">现功率 '+um.currentPower+' kW</span></span></div>';
+      ucHTML += '<div class="ufc-body"><div class="ufc-left">';
+      ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">发电统计</div><div class="ufc-stats">';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+Number(um.todayFD).toLocaleString()+' kWh</span><span class="ufc-sl">今日发电量</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+Number(um.yesterdayFD).toLocaleString()+' kWh</span><span class="ufc-sl">昨日发电量</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearFD.toFixed(2)+' 万kWh</span><span class="ufc-sl">今年发电量</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.lastYearFD.toFixed(2)+' 万kWh</span><span class="ufc-sl">去年发电量</span></div>';
+      ucHTML += '<div class="ufc-stat highlight"><span class="ufc-sv">'+um.vsLastYear+'%</span><span class="ufc-sl">对比去年发电</span></div>';
+      ucHTML += '</div></div>';
+      ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">时间统计</div><div class="ufc-stats">';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+esc(um.currentStart)+'</span><span class="ufc-sl">本次发电时间</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearRunH.toFixed(1)+' h</span><span class="ufc-sl">今年发电时长</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearStopH.toFixed(1)+' h</span><span class="ufc-sl">今年停发时长</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.currentRunH.toFixed(1)+' h</span><span class="ufc-sl">本次发电持续</span></div>';
+      ucHTML += '<div class="ufc-stat"><span class="ufc-sv">'+um.yearRunPct+'%</span><span class="ufc-sl">年发电时长占比</span></div>';
+      ucHTML += '</div></div>';
+      ucHTML += '<div class="ufc-panel"><div class="ufc-panel-title">运行记录</div>';
+      ucHTML += '<div class="ufc-run-chart" id="stRunChart'+mi+'"></div>';
+      ucHTML += '<div style="text-align:center;margin-top:4px;font-size:11px;color:var(--t3)">断路器分闸计数: <span style="color:var(--accent);font-family:var(--fd);font-size:14px">'+um.breakerCount+'</span> 次</div>';
+      ucHTML += '</div></div>';
+      ucHTML += '<div class="ufc-right"><div class="ufc-panel"><div class="ufc-panel-title">近30天发电量趋势</div>';
+      ucHTML += '<div class="ufc-chart-30d" id="stUnitChart'+mi+'"></div></div></div>';
+      ucHTML += '</div></div>';
+    }
+  }
+
+  var uc = document.getElementById('stUnitCards'); if (uc) uc.innerHTML = ucHTML;
+
+  setTimeout(function(){ drawStationCharts(); }, 200);
+
+  var dbg = document.getElementById('chartDebug');
+  if (dbg) dbg.textContent = '电站视图 · ' + (foundName || stationId);
+}
+
+function drawStationCharts(){
+  var sd = window._STATION_DATA || {};
+  var devDetail = (sd.deviceDetail||{}).body||[];
+  var weatherNearest = (sd.weatherNearest||{}).body||[];
+
+  // Mock 30-day data if API data is empty
+  function mock30Day() {
+    var dates = []; var vals = [];
+    var now = new Date();
+    for (var i = 29; i >= 0; i--) {
+      var d = new Date(now); d.setDate(d.getDate()-i);
+      dates.push((d.getMonth()+1)+'/'+d.getDate());
+      vals.push(Math.round(Math.random()*8000+2000));
+    }
+    return {dates:dates, vals:vals};
+  }
+
+  // Mock hourly data for real-time chart
+  function mockHourly() {
+    var hours = []; var vals = [];
+    for (var i = 0; i < 24; i++) {
+      hours.push(i+':00');
+      vals.push(Math.round(Math.random()*400+100));
+    }
+    return {hours:hours, vals:vals};
+  }
+
+  // Mock monthly data
+  function mockMonthly() {
+    var months = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
+    var fdl = months.map(function(){return (Math.random()*60+10).toFixed(2);});
+    var rain = months.map(function(){return (Math.random()*200+20).toFixed(1);});
+    return {months:months, fdl:fdl, rain:rain};
+  }
+
+  // --- Chart 1: 实时发电量/降雨量趋势 ---
+  var elRT = document.getElementById('chartStRealtime');
+  if (elRT) {
+    if (window._stRT) window._stRT.dispose();
+    var mh = mockHourly();
+    var chart = echarts.init(elRT); window._stRT = chart;
+    chart.setOption({
+      tooltip: {trigger:'axis'},
+      legend: {data:['实时发电量','降雨量'],textStyle:{fontSize:10,color:'#8899b4'},top:0},
+      grid: {left:50,right:50,top:30,bottom:24},
+      xAxis: {type:'category',data:mh.hours,axisLabel:{fontSize:9,color:'#5a6d84'},axisLine:{lineStyle:{color:'rgba(255,255,255,0.08)'}}},
+      yAxis: [
+        {type:'value',name:'kW',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{lineStyle:{color:'rgba(255,255,255,0.04)'}}},
+        {type:'value',name:'mm',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{show:false}}
+      ],
+      series: [
+        {name:'实时发电量',type:'line',data:mh.vals,lineStyle:{color:'#1e90ff',width:2},itemStyle:{color:'#1e90ff'},symbol:'circle',symbolSize:3,areaStyle:{color:'rgba(30,144,255,0.1)'}},
+        {name:'降雨量',type:'bar',yAxisIndex:1,data:mh.vals.map(function(){return (Math.random()*1.5).toFixed(1);}),itemStyle:{color:'#00b4d8'},barMaxWidth:8,barGap:'20%'}
+      ]
+    });
+  }
+
+  // --- Chart 2: 近期发电量/降雨量趋势 (30-day) ---
+  var el30 = document.getElementById('chartStRecent');
+  if (el30) {
+    if (window._stRecent) window._stRecent.dispose();
+    var fdlS = null, pcpnS = null;
+    (weatherNearest||[]).forEach(function(s){if(s.type==='fdl')fdlS=s;if(s.type==='pcpn')pcpnS=s;});
+    var fx, fy, py;
+    if (fdlS && fdlS.x && fdlS.x.length > 0) {
+      fx = fdlS.x.map(function(d){return d.substring(5);});
+      fy = (fdlS.y||[]).map(function(v){return parseFloat(v)||0;});
+      py = (pcpnS&&pcpnS.y||[]).map(function(v){return parseFloat(v)||0;});
+    } else {
+      var m30 = mock30Day();
+      fx = m30.dates; fy = m30.vals; py = m30.vals.map(function(){return (Math.random()*8).toFixed(1);});
+    }
+    var chart = echarts.init(el30); window._stRecent = chart;
+    chart.setOption({
+      tooltip: {trigger:'axis'},
+      legend: {data:['发电量','降雨量'],textStyle:{fontSize:10,color:'#8899b4'},top:0},
+      grid: {left:50,right:50,top:30,bottom:24},
+      xAxis: {type:'category',data:fx,axisLabel:{fontSize:9,color:'#5a6d84',rotate:30},axisLine:{lineStyle:{color:'rgba(255,255,255,0.08)'}}},
+      yAxis: [
+        {type:'value',name:'kWh',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{lineStyle:{color:'rgba(255,255,255,0.04)'}}},
+        {type:'value',name:'mm',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{show:false}}
+      ],
+      series: [
+        {name:'发电量',type:'bar',data:fy,itemStyle:{color:'#1e90ff'},barMaxWidth:12},
+        {name:'降雨量',type:'line',yAxisIndex:1,data:py,lineStyle:{color:'#00b4d8',width:2},itemStyle:{color:'#00b4d8'},symbol:'circle',symbolSize:4}
+      ]
+    });
+  }
+
+  // --- Chart 3: 月度发电量/降雨量对比 ---
+  var elMon = document.getElementById('chartStMonthly');
+  if (elMon) {
+    if (window._stMonthly) window._stMonthly.dispose();
+    var mm = mockMonthly();
+    var chart = echarts.init(elMon); window._stMonthly = chart;
+    chart.setOption({
+      tooltip: {trigger:'axis'},
+      legend: {data:['月发电量(万kWh)','月降雨量(mm)'],textStyle:{fontSize:10,color:'#8899b4'},top:0},
+      grid: {left:50,right:50,top:30,bottom:24},
+      xAxis: {type:'category',data:mm.months,axisLabel:{fontSize:9,color:'#5a6d84'},axisLine:{lineStyle:{color:'rgba(255,255,255,0.08)'}}},
+      yAxis: [
+        {type:'value',name:'万kWh',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{lineStyle:{color:'rgba(255,255,255,0.04)'}}},
+        {type:'value',name:'mm',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{show:false}}
+      ],
+      series: [
+        {name:'月发电量(万kWh)',type:'bar',data:mm.fdl,itemStyle:{color:'#1e90ff'},barMaxWidth:20,barGap:'20%'},
+        {name:'月降雨量(mm)',type:'bar',data:mm.rain,itemStyle:{color:'#48cae4'},barMaxWidth:20}
+      ]
+    });
+  }
+
+  // --- Unit 30-day charts ---
+  var unitCount = (devDetail||[]).length || 2;
+  for (var ui = 0; ui < unitCount; ui++) {
+    var el = document.getElementById('stUnitChart'+ui);
+    if (!el) continue;
+    var fdl = (devDetail[ui]||{}).fdl || {};
+    var dates = fdl.x || [];
+    var vals = (fdl.y || []).map(function(v){return parseFloat(v)||0;});
+
+    // If no API data, use mock
+    if (dates.length === 0) {
+      var m30 = mock30Day();
+      dates = m30.dates.map(function(d){return '2026-'+d.replace('/','-');});
+      vals = m30.vals;
+    }
+
+    var lastIdx = vals.length - 1;
+    while (lastIdx >= 0 && vals[lastIdx] === 0) lastIdx--;
+    if (lastIdx < 0) lastIdx = vals.length - 1;
+    var start = Math.max(0, lastIdx - 29);
+    var xd = dates.slice(start, lastIdx + 1).map(function(d){return d.substring(5);});
+    var yd = vals.slice(start, lastIdx + 1);
+
+    if (window['_stUC'+ui]) window['_stUC'+ui].dispose();
+    var chart = echarts.init(el); window['_stUC'+ui] = chart;
+    chart.setOption({
+      grid: {left:40,right:12,top:8,bottom:24},
+      xAxis: {type:'category',data:xd,axisLabel:{fontSize:9,color:'#5a6d84',rotate:30},axisLine:{lineStyle:{color:'rgba(255,255,255,0.08)'}}},
+      yAxis: {type:'value',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{lineStyle:{color:'rgba(255,255,255,0.04)'}}},
+      series: [{type:'line',data:yd,lineStyle:{color:'#1e90ff',width:2},itemStyle:{color:'#1e90ff'},symbol:'circle',symbolSize:3,areaStyle:{color:'rgba(30,144,255,0.08)'}}],
+      tooltip: {trigger:'axis',textStyle:{fontSize:11}}
+    });
+  }
+
+  // --- Unit run record charts (mock) ---
+  for (var ri = 0; ri < unitCount; ri++) {
+    var rel = document.getElementById('stRunChart'+ri);
+    if (!rel) continue;
+    if (window['_stRun'+ri]) window['_stRun'+ri].dispose();
+    var categories = ['开机','发电','停机','待用'];
+    var mockDurations = ri===0 ? [680,13640,220,1380] : [620,520,40,380];
+    mockDurations = mockDurations.map(function(v){return v/3600;}); // Convert seconds to hours
+    var chart = echarts.init(rel); window['_stRun'+ri] = chart;
+    chart.setOption({
+      grid: {left:50,right:10,top:4,bottom:20},
+      yAxis: {type:'category',data:categories,axisLabel:{fontSize:10,color:'#8899b4'},axisLine:{lineStyle:{color:'rgba(255,255,255,0.08)'}}},
+      xAxis: {type:'value',name:'h',axisLabel:{fontSize:9,color:'#5a6d84'},splitLine:{lineStyle:{color:'rgba(255,255,255,0.04)'}}},
+      series: [{
+        type:'bar',data:mockDurations,
+        itemStyle:{color:function(p){return ['#ff9100','#1e90ff','#546e7a','#4caf50'][p.dataIndex];}},
+        barMaxWidth:16,
+        label:{show:true,position:'right',formatter:function(p){return p.value.toFixed(1)+'h';},fontSize:10,color:'#8899b4'}
+      }],
+      tooltip: {trigger:'axis'}
+    });
+  }
+}

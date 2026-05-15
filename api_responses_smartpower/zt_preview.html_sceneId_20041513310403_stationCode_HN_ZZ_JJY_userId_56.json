@@ -1,0 +1,38 @@
+<!--
+ * @Author: liutong
+ * @Date: 2021-10-19 11:10:28
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-09-26 10:24:03
+ * @Descripttion: 
+ * @FilePath: \zt_cloud_ui\dist\preview.html
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./lib/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./lib/preview.css" />
+</head>
+
+<body>
+
+    <div class="app">
+    </div>
+    <script src="./lib/twaver.js"></script>
+    <script src="./lib/license.js"></script>
+    <script src="./lib/layui/layui.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=SitkPQ8K2wZANvuOsEnBieOg&s=1"></script>
+    <script language="javascript" type="text/javascript" src="./lib/WdatePicker/WdatePicker.js"></script>
+    <script src="./lib/Syunew3.js"></script>
+    <script src="./lib/h5player/h5player.min.js"></script>
+    <script src="./lib/bundle.js"></script>
+    <script>
+        window._isEdit = 20;
+    </script>
+</body>
+
+</html>

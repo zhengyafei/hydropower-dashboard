@@ -1,0 +1,1735 @@
+{
+  "code": 200,
+  "msg": "",
+  "uri": null,
+  "body": [
+    {
+      "date": "2026-04-27",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777219200000",
+            "sdlEndTime": "1777248000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777248000000",
+            "sdlEndTime": "1777276800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777276800000",
+            "sdlEndTime": "1777305540000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777305600000",
+            "sdlEndTime": "1777334400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777334400000",
+            "sdlEndTime": "1777363200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777363200000",
+            "sdlEndTime": "1777391940000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777392000000",
+            "sdlEndTime": "1777420800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777420800000",
+            "sdlEndTime": "1777449600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777449600000",
+            "sdlEndTime": "1777478340000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777478400000",
+            "sdlEndTime": "1777507200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777507200000",
+            "sdlEndTime": "1777536000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777536000000",
+            "sdlEndTime": "1777564740000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-01",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777564800000",
+            "sdlEndTime": "1777593600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777593600000",
+            "sdlEndTime": "1777622400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777622400000",
+            "sdlEndTime": "1777651140000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777651200000",
+            "sdlEndTime": "1777680000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777680000000",
+            "sdlEndTime": "1777708800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777708800000",
+            "sdlEndTime": "1777737540000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777737600000",
+            "sdlEndTime": "1777766400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777766400000",
+            "sdlEndTime": "1777795200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777795200000",
+            "sdlEndTime": "1777823940000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777824000000",
+            "sdlEndTime": "1777852800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777852800000",
+            "sdlEndTime": "1777881600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              },
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777881600000",
+            "sdlEndTime": "1777910340000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777910400000",
+            "sdlEndTime": "1777939200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1777939200000",
+            "sdlEndTime": "1777968000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1777968000000",
+            "sdlEndTime": "1777996740000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1777996800000",
+            "sdlEndTime": "1778025600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778025600000",
+            "sdlEndTime": "1778054400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778054400000",
+            "sdlEndTime": "1778083140000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778083200000",
+            "sdlEndTime": "1778112000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778112000000",
+            "sdlEndTime": "1778140800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              },
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778140800000",
+            "sdlEndTime": "1778169540000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-08",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778169600000",
+            "sdlEndTime": "1778198400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778198400000",
+            "sdlEndTime": "1778227200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778227200000",
+            "sdlEndTime": "1778255940000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778256000000",
+            "sdlEndTime": "1778284800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778284800000",
+            "sdlEndTime": "1778313600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              },
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778313600000",
+            "sdlEndTime": "1778342340000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778342400000",
+            "sdlEndTime": "1778371200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778371200000",
+            "sdlEndTime": "1778400000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              },
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778400000000",
+            "sdlEndTime": "1778428740000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778428800000",
+            "sdlEndTime": "1778457600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778457600000",
+            "sdlEndTime": "1778486400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              },
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778486400000",
+            "sdlEndTime": "1778515140000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-12",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778515200000",
+            "sdlEndTime": "1778544000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778544000000",
+            "sdlEndTime": "1778572800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778572800000",
+            "sdlEndTime": "1778601540000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-13",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778601600000",
+            "sdlEndTime": "1778630400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778630400000",
+            "sdlEndTime": "1778659200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778659200000",
+            "sdlEndTime": "1778687940000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-14",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778688000000",
+            "sdlEndTime": "1778716800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778716800000",
+            "sdlEndTime": "1778745600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "彭宏伟",
+                "userId": "25080709460908",
+                "mobile": "15522227777",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778745600000",
+            "sdlEndTime": "1778774340000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "赵兴宇",
+                "userId": "26051215545433",
+                "mobile": "18855552222",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-15",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778774400000",
+            "sdlEndTime": "1778803200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778803200000",
+            "sdlEndTime": "1778832000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778832000000",
+            "sdlEndTime": "1778860740000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "赵兴宇",
+                "userId": "26051215545433",
+                "mobile": "18855552222",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778860800000",
+            "sdlEndTime": "1778889600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778889600000",
+            "sdlEndTime": "1778918400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              },
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1778918400000",
+            "sdlEndTime": "1778947200000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              },
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "赵兴宇",
+                "userId": "26051215545433",
+                "mobile": "18855552222",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1778947200000",
+            "sdlEndTime": "1778976000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1778976000000",
+            "sdlEndTime": "1779004800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779004800000",
+            "sdlEndTime": "1779033600000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-18",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779033600000",
+            "sdlEndTime": "1779062400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779062400000",
+            "sdlEndTime": "1779091200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779091200000",
+            "sdlEndTime": "1779120000000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779120000000",
+            "sdlEndTime": "1779148800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779148800000",
+            "sdlEndTime": "1779177600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779177600000",
+            "sdlEndTime": "1779206400000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "赵兴宇",
+                "userId": "26051215545433",
+                "mobile": "18855552222",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779206400000",
+            "sdlEndTime": "1779235200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779235200000",
+            "sdlEndTime": "1779264000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779264000000",
+            "sdlEndTime": "1779292800000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779292800000",
+            "sdlEndTime": "1779321600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779321600000",
+            "sdlEndTime": "1779350400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779350400000",
+            "sdlEndTime": "1779379200000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "赵兴宇",
+                "userId": "26051215545433",
+                "mobile": "18855552222",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-22",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779379200000",
+            "sdlEndTime": "1779408000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779408000000",
+            "sdlEndTime": "1779451200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 3,
+            "sdlStartTime": "1779451200000",
+            "sdlEndTime": "1779494400000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-23",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779494400000",
+            "sdlEndTime": "1779537600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779537600000",
+            "sdlEndTime": "1779580800000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "司马佳",
+                "userId": "21071914550027",
+                "mobile": "13137740017",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-24",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779580800000",
+            "sdlEndTime": "1779624000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779624000000",
+            "sdlEndTime": "1779667200000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              },
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-25",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779667200000",
+            "sdlEndTime": "1779710400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "刘泳",
+                "userId": "26032710373727",
+                "mobile": "13255555555",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779710400000",
+            "sdlEndTime": "1779753600000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-26",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779753600000",
+            "sdlEndTime": "1779796800000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779796800000",
+            "sdlEndTime": "1779840000000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-27",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779840000000",
+            "sdlEndTime": "1779883200000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779883200000",
+            "sdlEndTime": "1779926400000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              },
+              {
+                "userName": "尹嘉宇",
+                "userId": "25032510033308",
+                "mobile": "16699998887",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-28",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1779926400000",
+            "sdlEndTime": "1779969600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          },
+          {
+            "sdlNum": 2,
+            "sdlStartTime": "1779969600000",
+            "sdlEndTime": "1780012800000",
+            "nextDay": 1,
+            "userVoList": [
+              {
+                "userName": "陈俊宇",
+                "userId": "24102808540903",
+                "mobile": "15566662223",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-29",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1780012800000",
+            "sdlEndTime": "1780041600000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-30",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1780099200000",
+            "sdlEndTime": "1780128000000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "date": "2026-05-31",
+      "numVoListMap": {
+        "schedulingType1": [
+          {
+            "sdlNum": 1,
+            "sdlStartTime": "1780185600000",
+            "sdlEndTime": "1780214400000",
+            "nextDay": 0,
+            "userVoList": [
+              {
+                "userName": "汪乐天",
+                "userId": "25060916141313",
+                "mobile": "12233336666",
+                "remove": 0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "success": true
+}
